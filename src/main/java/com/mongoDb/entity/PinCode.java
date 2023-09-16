@@ -13,14 +13,25 @@ public class PinCode {
     @Field(name="Pincode")
     private Double pincode ;
 
-    @Field(name="RegionName")
+    @Field(name="District")
     private String city ;
 
-@Field(name="CircleName")
+    @Field(name="Country")
+    private String country ;
+
+@Field(name="StateName")
     private String state ;
 
     public PinCode() {
 
+    }
+
+    public String getCountry() {
+        return country;
+    }
+
+    public void setCountry(String country) {
+        this.country = country;
     }
 
     public String getId() {
